@@ -1,1 +1,1 @@
-# DAS-Practica-1-
+# Repositorio para la primera practica de DAS. Para más información consultar a Viki
