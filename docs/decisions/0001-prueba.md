@@ -5,12 +5,13 @@
 
 ## Context and Problem Statement
 
-Esto es una prueba
+No me quería dar permisos mi niñito. A ver ahora
 
 ## Considered Options
 
-* 1
+* Pegarle una patada
+* Pegarle un morreo
 
 ## Decision Outcome
 
-Chosen option: "1", because comes out best.
+Chosen option: "Pegarle una patada", because No le voy a dar un beso, que asco
