@@ -7,6 +7,12 @@
 
 Necesitamos migrar de un sistema de arquitectura monolítica a uno basado en microservicios.
 
+## Decision Drivers
+
+* Aplicación para clientes ajenos a la empresa
+* Aprovechar los módulos de la empresa
+* Usaremos bases de datos existentes
+
 ## Considered Options
 
 * Por capas
@@ -17,13 +23,15 @@ Necesitamos migrar de un sistema de arquitectura monolítica a uno basado en mic
 
 ## Decision Outcome
 
-Chosen option: "Layered-SOA", because se adapta a nuestras necesidades ya que el estilo por capas nos permite procesar las peticiones realizadas por los clientes y con SOA especializamos una de las capas para poder tratar como servicios los distintos módulos proporcionados por la empresa.
+Chosen option: "Cliente-servidor", because se adapta a nuestras necesidades ya que este estilo está divido en 3 capas bien diferenciadas, permitiéndonos separar la interfaz (con la que interactuará el cliente) de la lógica de negocio (donde acoplaremos los módulos de la empresa) y de las bases de datos (también alojadas en el servidor)
 
 ### Positive Consequences
 
-* Respeta la independencia de los módulos permitiendo seguir desarrollando los módulos de manera independiente
-* SOA nos permite utilizar los módulos como servicios
-* Sencilla de programar, el estilo por capas es fácil de aplicar y muchos programadores estan muy familiarizados
+* Respeta la independencia de los módulos
+* Sencillo de programar
+* Muchos programadores están muy familiarizados
+* Sistema mantenible
+* Es posible llevar a cabo un desarrollo paralelo en cada capa.
 
 ## Pros and Cons of the Options
 
